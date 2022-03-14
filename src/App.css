@@ -1,38 +1,73 @@
-.App {
+body{
   text-align: center;
-}
+  background-color: black ;
+  color: whitesmoke;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.charImg {
+  max-height: 140px;
+  max-width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.residentCard{
+  display:flex;
+  flex-direction: row;
+  border:2px solid silver;
+  text-align: left;
+  padding: 1%;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 40vw;
+  height: 20%;
+  margin-bottom: 10px;
+
+}
+.residentsList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.locationInfo{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  
+}
+
+.header{
+position: sticky;
+top:0;
+background-color: black;
+background-image: url("./img/rickandmorty2.png");
+background-repeat: no-repeat;
+background-position: right;
+background-size: contain;
+padding:1%;
+}
+
+@media screen and (max-width:600px) {
+  .residentCard{
+    flex-direction: column;
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+  .locationInfo{
+    background-color: black;
   }
+}
+
+b{
+  margin: 10px;
+}
+
+button{
+  background-color: black;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
 }
